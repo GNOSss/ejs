@@ -1,29 +1,29 @@
 <nav class="bottom-nav">
-    <% if (user) { %>
-      <button class="nav-item">
-            <i class="ri-login-box-line"></i>
-            <span>Logout</span>
-        </button>
-    <% } else { %>
-        <a href="/login" class="nav-item <%= currentPath === '/login' ? 'active' : '' %>">
-            <i class="ri-login-box-line"></i>
-            <span>Login</span>
-        </a>
-    <% } %>
-      <a href="/workout" class="nav-item <%= currentPath === '/workout' ? 'active' : '' %>">
-      <i class="ri-heart-pulse-line"></i>
-      <span>Workout</span>
-      </a>
-      <a href="/history" class="nav-item <%= currentPath === '/history' ? 'active' : '' %>">
-          <i class="ri-history-line"></i>
-          <span>History</span>
-      </a>
-      <a href="/exercise" class="nav-item <%= currentPath === '/exercise' ? 'active' : '' %>">
-          <i class="ri-run-line"></i>
-          <span>Exercise</span>
-      </a>
-      <a href="/profile" class="nav-item <%= currentPath === '/profile' ? 'active' : '' %>">
-          <i class="ri-user-line"></i>
-          <span>Profile</span>
-      </a>
+  <% if (user) { %>
+  <button class="nav-item">
+    <i class="ri-login-box-line"></i>
+    <span>Logout</span>
+  </button>
+  <% } else { %>
+  <a href="/login" class="nav-item <%= currentPath === '/login' ? 'active' : '' %>">
+    <i class="ri-login-box-line"></i>
+    <span>Login</span>
+  </a>
+  <% } %>
+  <a href="/workouts" class="nav-item <%= currentPath === '/workout' ? 'active' : '' %>">
+    <i class="ri-heart-pulse-line"></i>
+    <span>Workout</span>
+  </a>
+  <a href="/history" class="nav-item <%= currentPath === '/history' ? 'active' : '' %>">
+    <i class="ri-history-line"></i>
+    <span>History</span>
+  </a>
+  <a href="/set-records" class="nav-item <%= currentPath === '/exercise' ? 'active' : '' %>">
+    <i class="ri-run-line"></i>
+    <span>records</span>
+  </a>
+  <a href="/user-pages/records" class="nav-item <%= currentPath === '/profile' ? 'active' : '' %>">
+    <i class="ri-user-line"></i>
+    <span>Profile</span>
+  </a>
 </nav>

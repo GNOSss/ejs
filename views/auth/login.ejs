@@ -5,29 +5,29 @@
   <div class="alert"><%= message %></div>
   <% } %>
 
+  <!-- 팝업창을 표시하기 위한 스크립트 -->
+  <% if (error && error.length > 0) { %>
+  <script>
+    alert('<%= error %>'); // 서버에서 전달된 에러 메시지를 팝업창으로 표시
+  </script>
+  <% } %>
+
   <form action="/login" method="POST" class="login-form">
     <div class="form-group">
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="Enter your email"
-      />
+      <label for="user_id">ID</label>
+      <input type="text" id="user_id" name="user_id" required placeholder="Enter your email" />
     </div>
 
     <div class="form-group">
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        required
-        placeholder="Enter your password"
-      />
+      <label for="pw">Password</label>
+      <input type="password" id="pw" name="pw" required placeholder="Enter your password" />
     </div>
 
     <button type="submit" class="btn">Login</button>
+  </form>
+
+  <!-- 회원가입 버튼 -->
+  <form action="/register" method="GET">
+    <button type="submit" class="btn">회원가입</button>
   </form>
 </div>
