@@ -1,0 +1,48 @@
+/* Login Page Styles */
+.login-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h1 {
+  margin-bottom: 14px;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.login-form {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #141218;
+  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.1),0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-caption);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--tertiary);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  color: var(--text-body);
+}
+
+.alert {
+  color: var(--tertiary);
+  margin-bottom: 1rem;
+  text-align: center;
+}

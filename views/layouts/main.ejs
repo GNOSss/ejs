@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %> - Workout App</title>
+    <!-- Global styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Page specific styles -->
+    <link
+      rel="stylesheet"
+      href="/css/pages/<%= currentPath.substring(1) || 'login' %>.css"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <main class="main-content <%= currentPath === '/login' ? 'no-nav' : '' %>">
+      <%- body %>
+    </main>
+
+    <% if (currentPath !== '/login') { %> <%- include('../partials/navigation')
+    %> <% } %>
+  </body>
+</html>

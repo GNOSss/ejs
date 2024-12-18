@@ -1,0 +1,12 @@
+/* History Page Styles */
+.container {
+  padding: 1rem;
+}
+
+.container h1 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Add more history-specific styles here */
